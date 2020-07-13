@@ -32,7 +32,7 @@ socket.on('message', (message) => {
         createdAt : moment(message.createdAt).format('h:mm a')
     })
     messages.insertAdjacentHTML('beforeend',html)
-    autoscroll()
+    // autoscroll()
 })
 
 socket.on('locationMessage',(message)=>{
@@ -43,7 +43,7 @@ socket.on('locationMessage',(message)=>{
         createdAt : moment(mapsUrl.createdAt).format('h:mm a')
     })
     messages.insertAdjacentHTML('beforeend',html)
-    autoscroll()
+    // autoscroll()
 })
 
 socket.on('roomData',({room, users}) => {
